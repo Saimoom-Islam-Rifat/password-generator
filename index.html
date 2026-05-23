@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="quiz-app">
+        <h1>Generate a <br /><span class="highlight">Random Password</span></h1>
+        <div class="inputBox">
+          <input
+            type="text"
+            id="password"
+            placeholder="Click Generate Password"
+            autocomplete="off"
+            readonly
+          />
+          <button><img src="assets/copy.svg" alt="Copy button" /></button>
+        </div>
+        <button class="btn">
+          <img src="assets/zap.svg" alt="" aria-hidden="true" />
+          Generate Password
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
