@@ -1,5 +1,6 @@
 const passwordInput = document.querySelector("#password");
 const btn = document.querySelector(".btn");
+const copyBtn = document.querySelector("#copyBtn");
 
 function generatePassword(length = 16) {
   const chars =
@@ -19,6 +20,11 @@ function generatePassword(length = 16) {
 
 btn.addEventListener("click", () => {
   passwordInput.value = generatePassword();
+});
+
+copyBtn.addEventListener("click", () => {
+  const text = passwordInput.value;
+  navigator.clipboard.writeText(text);
 });
 
 // Use autocomplete="off" in input element or below code to clear input field after page reload
